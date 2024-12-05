@@ -1,17 +1,17 @@
 👋 Hello developer!
 
-This is one of the many templates available from W3schools. Check our tutorials for frontend development to learn the basics of HTML and CSS. 🦄
+Это один из многих шаблонов, доступных в W3schools. Ознакомьтесь с нашими руководствами по разработке frontend, чтобы изучить основы HTML и CSS. 🦄
 🏗 What's next?
 
-Customize this template to make it your own. Remember to make your layout responsive - if you want your site to look good on smaller screens like mobile.
+Настройте этот шаблон, чтобы сделать его своим. Не забудьте сделать макет адаптивным, если вы хотите, чтобы ваш сайт хорошо смотрелся на небольших экранах, таких как мобильные.
 🎨 Where to find everything
 
 
-⛑ Need support?
+⛑Нужна поддержка?
 
-Join our Discord community and ask questions in the #spaces-general channel.
+Присоединяйтесь к нашему сообществу Discord и задавайте вопросы на канале #spaces-general.
 🚀 Upgrade to Pro
 
-Upgrade your account to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
+Обновите свою учетную запись, чтобы увеличить свое пространство и вывести свои проекты на новый уровень; больше запросов, больше хранилища и больше мощности 
 
-Happy learning!
+Приятного обучения!
