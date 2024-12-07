@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 30 окт. 2024 г., 20:21:06
+    Author     : gellioss
+*/
+
+
+#myHeader {
+    background-color: grey;
+    padding: 40px;
+    text-align: center;
+    color: white
+}
+
+* {
+    transition: all 1s;
+}
+
+body {font-family: Arial,
+Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    /*background-color: #04AA6D;*/
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*input[type=submit]:hover {*/
+/*    background-color: #45a049;*/
+/*}*/
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.w3-light-grey,
+.w3-hover-light-grey:hover,
+.w3-light-gray,
+.w3-hover-light-gray:hover {
+    color: #000 !important;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
