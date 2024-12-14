@@ -6,9 +6,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="stylecss.css" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">       
         <link rel="stylesheet" href="stylecss.css" type="text/css">
+        <link rel="stylesheet" href="css/navbar.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <style>
             body,
@@ -61,10 +62,23 @@
         <!-- Push down content on small screens -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
+<!--        navbar-->
+        <div class="topnav">
+        <a class="button" href="regisration/registr.html">Регистрация</a>
+<!--        <a href="#about">About</a>
+             <a href="#contact">Contact</a>-->
+             <div class="login-container">
+             <form action="/action_page.php">
+              <input type="text" placeholder="логин" name="username">
+            <input type="text" placeholder="пароль" name="psw">
+         <button type="submit">Войти</button>
+         </form>
+        </div>
+       </div>
+        
         <!-- An element with a unique id --> 
         <h1 id="myHeader">напишите мне </h1>
-        <p> <a href="regisration/registr.html">link text</a></p>
-
+     
     <!-- Contact section -->
         <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
             <div class="w3-content" style="max-width:600px">
