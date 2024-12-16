@@ -7,9 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="stylecss.css" type="text/css">
+        <link rel="stylesheet" href="css/stylecss.css" type="text/css">
         <link rel="stylesheet" href="../test/lib/jasmine/jasmine.css" type="text/css"/>
 
+        
+        <script src="javascript/mainjavascript.js"></script>
         
         <style>
             body,
@@ -65,26 +67,26 @@
         <!-- Photo grid -->
         <div class="w3-row">
             <div class="w3-third">
-                <img src="https://www.w3schools.com/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="img/amazed.png" style="width:100%" onclick="onClick(this)"
                     alt="A boy surrounded by beautiful nature">
-                <img src="https://www.w3schools.com/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="img/baby.png" style="width:100%" onclick="onClick(this)"
                     alt="What a beautiful scenery this sunset">
-                <img src="https://www.w3schools.com/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                <img src="img/disaen.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
             </div>
 
             <div class="w3-third">
-                <img src="https://www.w3schools.com/w3images/boy.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="img/cafe.jpg" style="width:100%" onclick="onClick(this)"
                     alt="Quiet day at the beach. Cold, but beautiful">
-                <img src="https://www.w3schools.com/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="img/woody.png" style="width:100%" onclick="onClick(this)"
                     alt="Waiting for the bus in the desert">
-                <img src="https://www.w3schools.com/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="img/amazed.png" style="width:100%" onclick="onClick(this)"
                     alt="Nature again.. At its finest!">
             </div>
 
             <div class="w3-third">
-                <img src="https://www.w3schools.com/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-                <img src="https://www.w3schools.com/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-                <img src="https://www.w3schools.com/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+                <img src="img/disaen.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                <img src="img/car.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                <img src="img/jobs.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
             </div>
         </div>
 
@@ -161,30 +163,6 @@
         </footer>
 
         <div class="w3-black w3-center w3-padding-24">&copy; Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="_blank" class="w3-hover-opacity">W3Schools Spaces</a></div>
-
-
-        
-        <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-    </script>
     </div>
     </body>
 </html>

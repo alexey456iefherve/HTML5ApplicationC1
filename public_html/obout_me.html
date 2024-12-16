@@ -5,13 +5,15 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/w3-css.css" type="text/css">
+        <link rel="stylesheet" href="css/raleway.css" type="text/css">
+        <link rel="stylesheet" href="css/stylecss.css" type="text/css">
+        <link rel="stylesheet" href="css/fullscreen.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome-min.css" type="text/css">
+    
+
+        <script src="javascript/mainjavascript.js"></script>
         
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="stylecss.css" type="text/css">
-        
-  
-        <script src="gulpfile.js"></script>
         
         <style>
             body,
@@ -36,23 +38,24 @@
         
     </head>
     
-    <body class="w3-light-grey w3-content" style="max-width:1600px">
+    <body class="w3-light-grey w3-content" style="max-width:1600px" >
         
         <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>ВАСЯ<br>ПУПКИН</b></h3>
-        <a href="javascript:void(0)" onclick="w3_close()"
-            class="w3-bar-item w3-button w3-padding w3-hide-large">ЗАКРЫТЬ</a>
-        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ПОРТФЕЛЬ</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ОБО МНЕ</a>
-        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">КОНТАКТЫ</a>
-    </nav>
+        <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+         <a href="#">ПОРТФЕЛЬ</a>
+         <a href="#">ОБО МНЕ</a>
+         <a href="#">КОНТАКТЫ</a>
+        </div>
+        </div>
 
-    <!-- Top menu on small screens -->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; нажать</span>
+        
+<!--     Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">SOME NAME</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+        <span class="w3-left w3-padding">ЗАКАЗАТЬ ДИЗАЙН</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="openNav()">☰</a>
     </header>
         
          <!-- Overlay effect when opening sidebar on small screens -->
@@ -60,16 +63,17 @@
         title="close side menu" id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">
+    <div class="w3-main" style="margin-left:30px">
 
         <!-- Push down content on small screens -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
         
+       
         
      <!-- About section -->
         <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
             <h4><b>Обо мне</b></h4>
-            <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <img src="logo-avatar.png" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>Вася Пупкин</h4>
                 <p>В современном мире цифровых технологий веб-разработчик играет центральную роль в 
@@ -103,8 +107,8 @@
                     <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
                 </div>
                 <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Скачать</button></p>
+                
                 <hr class="w3-opacity">
-
                 <h4 class="w3-padding-16">Цена за работу</h4>
                 <div class="w3-row-padding" style="margin:0 -16px">
                     <div class="w3-half w3-margin-bottom">
@@ -119,7 +123,24 @@
                                 <span class="w3-opacity">помесячно</span>
                             </li>
                             <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">Зарегистрироваться</button>
+                                <button class="w3-button w3-white w3-padding-large" onclick="document.location='registr.html'">Зарегистрироваться </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Начальный</li>
+                            <li class="w3-padding-16">Портфель</li>
+                            <li class="w3-padding-16">Оптимизация</li>
+                            <li class="w3-padding-16">10GB Хранилища</li>
+                            <li class="w3-padding-16">Сопровождение</li>
+                            <li class="w3-padding-16">
+                                <h2>$ 10</h2>
+                                <span class="w3-opacity">помесячно</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large" onclick="document.location='registr.html'">Зарегистрироваться </button>
                             </li>
                         </ul>
                     </div>
@@ -136,7 +157,7 @@
                                 <span class="w3-opacity">помесячно</span>
                             </li>
                             <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">Зарегистрироваться</button>
+                                <button class="w3-button w3-white w3-padding-large"  onclick="document.location='registr.html'">Зарегистрироваться</button>
                             </li>
                         </ul>
                     </div>
@@ -219,31 +240,9 @@
                 </div>
             </div>
         </footer>
+                    <!--Копирайт-->
         <div class="w3-black w3-center w3-padding-24">&copy; Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="_blank" class="w3-hover-opacity">W3Schools Spaces</a></div>
-        
-
-
-<script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-    </script>
+       
     </div>
     </body>
 </html>

@@ -7,9 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">       
-        <link rel="stylesheet" href="stylecss.css" type="text/css">
+        <link rel="stylesheet" href="css/stylecss.css" type="text/css">
         <link rel="stylesheet" href="css/navbar.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        <script src="javascript/mainjavascript.js"></script>
         
         <style>
             body,
@@ -64,7 +67,7 @@
 
 <!--        navbar-->
         <div class="topnav">
-        <a class="button" href="regisration/registr.html">Регистрация</a>
+<!--        <a class="button" href="regisration/registr.html">Регистрация</a>-->
 <!--        <a href="#about">About</a>
              <a href="#contact">Contact</a>-->
              <div class="login-container">
@@ -126,28 +129,6 @@
         <footer>
         <div class="w3-padding-24">&copy; Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="grey" class="w3-hover-opacity">3Schools Spaces</a></div>
         </footer>
-        
-        <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-    </script>
-    </div>
+       </div>
     </body>
 </html>
